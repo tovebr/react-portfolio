@@ -1,0 +1,54 @@
+
+.navbar {
+    background-color: var(--midgreen);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    height: 3rem;
+    padding-left: 1.5rem;
+}
+
+li {
+    padding: 1.5rem;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.main-nav li {
+    height: 4rem;
+    width: 8rem;
+}
+
+
+.about-li {
+    position: relative;
+}
+
+.about-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    left: 7.5rem;
+    
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.about-nav li {
+    padding: .5rem 2rem;
+    background-color: var(--midgreen);
+    border-bottom: 1px dotted #fff;
+}
+.bi-caret-down-fill {
+    color: #fff;
+    position: absolute;
+    top: 1.55rem;
+    left: 5rem;
+}
