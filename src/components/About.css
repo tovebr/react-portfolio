@@ -1,0 +1,25 @@
+#about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#about .nav-about {
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+}
+
+#about .nav-about a {
+    background-color: #fff;
+    color: #333;
+    padding: 1rem;
+    width: 25%;
+    text-align: center;
+}
+
+#about .about-link {
+    display: none;
+}

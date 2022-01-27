@@ -1,10 +1,9 @@
 import React from "react";
+import Container from "./Container";
 
-const Photo = () => {
+const Photo = ({data}) => {
     return (
-        <div>
-            <h3>Photo</h3>
-        </div>
+        <Container id={data.title} data={data}/>
     )
 }
 

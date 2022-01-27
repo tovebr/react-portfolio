@@ -1,10 +1,14 @@
 import React from "react";
+import Container from "./Container";
 
-const Code = () => {
+
+const Code = ({data}) => {
     return (
-        <div>
-            <h3>Code</h3>
-        </div>
+        <Container id={'code'} data={data}>
+            
+            
+        </Container>
+        
     )
 }
 

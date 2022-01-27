@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto&family=Staatliches&display=swap');
 
 * {
     padding: 0;
@@ -10,12 +10,14 @@
 :root {
     --lightgreen: #A3C3AC;
     --midgreen: #90AB98;
-    --darkergreen: #708C7D;
+    --darkergreen: #5f7569;
+    --gradient-background: radial-gradient(var(--midgreen), var(--darkergreen));
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     background-color: var(--lightgreen);
+    color: #fff;
 }
 
 a {
@@ -24,4 +26,46 @@ a {
 }
 ul {
     list-style: none;
+}
+
+.container {
+    width: 80%;
+    min-height: 45rem;
+    background: var(--gradient-background);
+    margin: 4.5rem auto;
+    padding: 2rem;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    min-height: 45rem;
+}
+
+.left {
+    width: 50%;
+    padding: 4rem;
+    min-height: 45rem;
+}
+
+.home-logo {
+    max-width: 6.7rem;
+}
+
+.portrait {
+    padding: 4rem 0;
+    max-width: 40rem;
+    max-height: 40rem;
+}
+
+.left-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: 0;
 }

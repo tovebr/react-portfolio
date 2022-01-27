@@ -1,11 +1,10 @@
 import React from "react";
+import Container from "./Container";
 
 
-const Music = () => {
+const Music = ({data}) => {
     return (
-        <div>
-            <h3>Music</h3>
-        </div>
+        <Container id={data.title} data={data}/>
     )
 }
 

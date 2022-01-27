@@ -1,6 +1,6 @@
 
 .navbar {
-    background-color: var(--midgreen);
+    background: linear-gradient(var(--darkergreen), var(--midgreen));
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +36,6 @@ li {
     position: absolute;
     top: 4rem;
     left: 7.5rem;
-    
     padding-bottom: 1rem;
     text-align: center;
 }
@@ -51,4 +50,12 @@ li {
     position: absolute;
     top: 1.55rem;
     left: 5rem;
+}
+
+.hide-dropdown {
+    display: none;
+}
+
+.open-dropdown {
+    transform: rotate(180deg);
 }
