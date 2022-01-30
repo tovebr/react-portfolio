@@ -117,10 +117,16 @@
   .second {
     padding-top: 6rem;
   }
+  .first {
+    padding-left: 0;
+  }
 }
 @media screen and (max-width: 700px) {
+  .home-content {
+    width: 80%;
+  }
   .first {
-    padding: 0;
+    padding-left: 15%;
   }
   .home-logo {
     width: 5rem;
@@ -137,8 +143,15 @@
     top: 2rem;
   }
 
+  #home .nav-about {
+    padding-left: 0;
+  }
   .nav-about a {
     font-size: 1.5rem;
+  }
+  #home .about-link {
+    width: 100%;
+    padding: 0;
   }
 }
 @media screen and (max-width: 450px) {
@@ -172,7 +185,13 @@
   #home .nav-about a {
     font-size: 1.5rem;
   }
-  #home a:first-child {
+  #home .about-link {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .first {
+    padding-left: 0;
   }
 }

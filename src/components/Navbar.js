@@ -36,6 +36,7 @@ const Navbar = () => {
           className='about-li'
           onMouseOver={() => setDropdownOpen(true)}
           onMouseLeave={() => setDropdownOpen(false)}
+          onClick={() => setDropdownOpen(!dropdownOpen)}
         >
           <Link to='/about'>About</Link>
           <i

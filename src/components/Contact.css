@@ -1,0 +1,50 @@
+.form-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+  position: relative;
+}
+
+#contact-form {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form input,
+#contact-form button,
+#contact-form textarea {
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 1px 1px 3px #333;
+  border: none;
+}
+
+#contact-form textarea {
+  height: 10rem;
+}
+
+.form-header {
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.form-btn {
+  background-color: #fff;
+  border: none;
+  box-shadow: 3px 3px 5px #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.ui-message {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

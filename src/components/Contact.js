@@ -1,11 +1,14 @@
 import React from "react";
 
+import Form from "./Form";
+import "./Contact.css";
+
 const Contact = () => {
-    return (
-        <div id="contact" className="container">
-            <h3>Contact me!</h3>
-        </div>
-    )
-}
+  return (
+    <div className=' container'>
+      <Form />
+    </div>
+  );
+};
 
 export default Contact;
