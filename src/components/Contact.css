@@ -3,8 +3,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40rem;
+  height: auto;
+}
+.contact-page {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
   position: relative;
+  height: 35rem;
 }
 
 #contact-form {
@@ -47,4 +54,12 @@
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.contact-links {
+  text-align: center;
+  padding-top: 4rem;
+}
+.contact-links a {
+  margin: 0.8rem;
+  font-size: 1.5rem;
 }

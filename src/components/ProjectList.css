@@ -22,6 +22,7 @@
   margin: auto;
   border: 2px solid #fff;
   box-shadow: 2px 2px 5px #333;
+  overflow: hidden;
 }
 
 .card-image img {
@@ -52,6 +53,19 @@
   text-align: center;
   width: 8rem;
   font-size: 1.2rem;
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.card-image:hover img {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.links a:hover,
+.link a:hover {
+  background-color: rgb(46, 70, 46);
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 1400px) {

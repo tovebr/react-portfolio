@@ -42,7 +42,6 @@ const Form = () => {
   };
   return (
     <div className='form-holder'>
-      <p className='form-header'>Let's get intouch!</p>
       <form id='contact-form' onSubmit={onSubmit}>
         <input
           type='text'
@@ -70,7 +69,6 @@ const Form = () => {
           Submit
         </button>
       </form>
-      <p className='ui-message'></p>
     </div>
   );
 };
