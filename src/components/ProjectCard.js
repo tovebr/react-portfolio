@@ -24,6 +24,16 @@ const ProjectCard = ({ project, formatTitle }) => {
       );
     }
   };
+
+  const tech = () => {
+    return (
+      <div className='technologies'>
+        {project.technology.map((tech, i) => (
+          <p key={i}>{tech}</p>
+        ))}
+      </div>
+    );
+  };
   link();
 
   return (
@@ -33,6 +43,8 @@ const ProjectCard = ({ project, formatTitle }) => {
         <img src={project.img} alt={project.title}></img>
       </div>
       {link()}
+      {project.technology ? tech() : ""}
+      {project.desktopOnly ? <p className='responsive'>!Desktop only!</p> : ""}
     </div>
   );
 };

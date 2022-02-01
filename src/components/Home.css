@@ -63,13 +63,14 @@
   padding: 0.5rem 0;
 }
 
-#home a:first-child {
+#home a:last-child {
   background-color: #fff;
   color: #333;
   width: 70%;
   padding: 1rem;
   text-align: center;
   margin-bottom: 0.5rem;
+  margin-top: 1rem;
 }
 
 @media screen and (max-width: 1200px) {

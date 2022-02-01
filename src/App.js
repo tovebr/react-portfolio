@@ -23,10 +23,11 @@ const App = () => {
             title: "memory",
             url: {
               demo: "https://tovebr.github.io/memory/",
-              github: "https://tovebr.github.io/memory/",
+              github: "https://github.com/tovebr/memory/",
             },
             img: "images/memory.jpg",
-            responsive: false,
+            desktopOnly: true,
+            technology: ["JavaScript", "CSS", "HTML"],
           },
           {
             description: "made webshop, verry fun",
@@ -36,7 +37,8 @@ const App = () => {
               github: "https://github.com/tovebr/webshop",
             },
             img: "images/webshop.jpg",
-            responsive: true,
+            desktopOnly: false,
+            technology: ["JavaScript", "SASS", "HTML"],
           },
           {
             description: "todo app",
@@ -46,7 +48,8 @@ const App = () => {
               github: "https://github.com/tovebr/todo",
             },
             img: "images/todo.jpg",
-            responsive: true,
+            desktopOnly: false,
+            technology: ["JavaScript", "CSS", "HTML"],
           },
           {
             description: "using bootstrap, made quiz",
@@ -56,7 +59,8 @@ const App = () => {
               github: "https://github.com/tovebr/bootstrap-study",
             },
             img: "images/sherlock.jpg",
-            responsive: true,
+            desktopOnly: false,
+            technology: ["JavaScript", "Bootstrap", "CSS", "HTML"],
           },
         ],
       },

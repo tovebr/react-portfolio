@@ -2,12 +2,14 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 80%;
-  grid-gap: 2rem;
+  grid-gap: 3rem;
   margin: 3rem auto;
 }
 
 .card {
   position: relative;
+  background-color: rgba(51, 51, 51, 0.247);
+  padding: 0.8rem 0;
 }
 
 .card-title {
@@ -35,7 +37,7 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -20%);
 }
@@ -57,15 +59,37 @@
   transition: all 0.2s ease-in-out;
 }
 
-.card-image:hover img {
-  transform: scale(1.1);
+.card:hover {
+  transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
 
-.links a:hover,
-.link a:hover {
+.card:hover a:hover,
+.card:hover a:hover {
   background-color: rgb(46, 70, 46);
   transform: scale(1.1);
+}
+.technologies {
+  margin: 0.7rem;
+  display: flex;
+  justify-content: center;
+  /* color: #333; */
+}
+.technologies p {
+  background-color: rgba(51, 51, 51, 0.589);
+  padding: 0.3rem;
+  margin: 0.2rem;
+  font-size: 0.7rem;
+}
+
+.responsive {
+  font-size: 1.1rem;
+  color: #333;
+  background-color: rgb(241, 136, 136);
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  padding: 0.2rem 0;
 }
 
 @media screen and (max-width: 1400px) {
