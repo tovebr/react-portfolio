@@ -54,6 +54,10 @@
   display: none;
 }
 
+.edu-link {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 1850px) {
   /*  #about {
     display: block;

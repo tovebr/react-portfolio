@@ -15,10 +15,20 @@ const About = () => {
           </p>
           <p className='second-p'>
             {" "}
-            Before studying webdevelopment I worked as a freelance musician for
-            10+ years. I have run my own company during that time. Not only did
-            it teach me to harvest and nourish my creativity, it also made me a
-            skilled administrator and problemsolver.
+            In the autumn of 2021 I began a new chapter in live as a Frontend
+            Development student at{" "}
+            <a
+              className='edu-link'
+              href='https://kyh.se/utbildningar/front-end-developer/'
+              target={"_blank"}
+              rel={"noreferrer"}
+            >
+              KYH
+            </a>{" "}
+            in Stockholm. Before that webdevelopment I worked as a freelance
+            musician for 10+ years. I have run my own company during that time.
+            Not only did it teach me to harvest and nourish my creativity, it
+            also made me a skilled administrator and problemsolver.
           </p>
           <p>
             Before being selfemployed I had a number of different jobs. I worked
@@ -44,11 +54,17 @@ const About = () => {
             The biggest part of my professinal life has been spent as a
             freelance musician in my own company. I have studied some to get
             there, first two years at the{" "}
-            <a href='https://www.kjj.cz/' target='_blank' rel='noreferrer'>
+            <a
+              className='edu-link'
+              href='https://www.kjj.cz/'
+              target='_blank'
+              rel='noreferrer'
+            >
               Jaroslav Jezek conservatory
             </a>{" "}
             in Prague, and later a{" "}
             <a
+              className='edu-link'
               href='https://www.gu.se/studera/hitta-utbildning/konstnarligt-kandidatprogram-i-musik-inriktning-improvisation-k1imp'
               target='_blank'
               rel='noreferrer'
@@ -61,8 +77,8 @@ const About = () => {
             bassplayer and conductor. I've play the doublebass, electric bass
             and synthbass in jazz, folk, hiphop, pop and bluesbands. It's a
             wonderful job but life on the road is a hard one. You have to travel
-            alot to make do as a musician, more than I have the capacity for
-            these days.
+            alot to make do as a musician, more than I want to after 10+ years
+            in the business.
           </p>
         </div>
         <div className='right'>
