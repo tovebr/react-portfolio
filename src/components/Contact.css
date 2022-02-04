@@ -56,11 +56,3 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.contact-links {
-  text-align: center;
-  padding-top: 4rem;
-}
-.contact-links a {
-  margin: 0.8rem;
-  font-size: 1.5rem;
-}

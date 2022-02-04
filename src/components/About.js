@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import NavAbout from "./NavAbout";
 import portrait from "../images/portrait.png";
+import ContactLinks from "./ContactLinks";
 import "./About.css";
 
 const About = () => {
@@ -87,6 +88,7 @@ const About = () => {
       </div>
       <NavAbout className='about-nav' />
       <Outlet />
+      <ContactLinks />
     </div>
   );
 };

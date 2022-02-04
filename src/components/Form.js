@@ -18,7 +18,7 @@ const Form = () => {
     if (toSend.from_name && toSend.message && toSend.reply_to) {
       send(
         "service_bsh2glu",
-        "template_l72hz2l",
+        "template_wlac7aq",
         toSend,
         "user_2bPg4quLOnsxSyKVS8suU"
       )

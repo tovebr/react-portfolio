@@ -3,6 +3,7 @@ import portrait from "../images/portrait.png";
 import { ReactComponent as Logo } from "../components/logo.svg";
 import "./Home.css";
 import NavAbout from "./NavAbout";
+import ContactLinks from "./ContactLinks";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
         </div>
         <div className='third'>
           <NavAbout className='home-links' />
+          <ContactLinks />
         </div>
       </div>
     </div>

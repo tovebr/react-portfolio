@@ -23,7 +23,7 @@ const App = () => {
             title: "memory",
             url: {
               demo: "https://tovebr.github.io/memory/",
-              github: "https://github.com/tovebr/memory/",
+              github: "https://github.com/tovebr/memory",
             },
             img: "images/memory.jpg",
             desktopOnly: true,

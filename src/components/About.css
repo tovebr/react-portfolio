@@ -58,6 +58,16 @@
   text-decoration: underline;
 }
 
+#about .contact-links {
+  text-align: center;
+  width: 100%;
+  padding-top: 3rem;
+}
+
+#about .contact-links a {
+  font-size: 1.2rem;
+}
+
 @media screen and (max-width: 1850px) {
   /*  #about {
     display: block;
@@ -102,5 +112,8 @@
   }
   #about .left {
     padding: 1rem;
+  }
+  #about .contact-links {
+    padding-bottom: 3rem;
   }
 }

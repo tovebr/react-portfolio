@@ -110,6 +110,9 @@ li {
   .main-nav li {
     width: 100%;
   }
+  .main-nav li:hover {
+    background-color: var(--darkergreen);
+  }
   .bi-caret-down-fill {
     top: 1.55rem;
     left: 55%;
