@@ -1,14 +1,14 @@
 #repo-list {
   margin: 6rem auto 3rem auto;
-  width: 60%;
+  width: 80%;
 }
 .repo-list-header {
   text-align: center;
   font-size: 1.5rem;
 }
 
-@media screen and (max-width: 950px) {
+/* @media screen and (max-width: 950px) {
   #repo-list {
     width: 80%;
   }
-}
+} */
