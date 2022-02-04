@@ -73,7 +73,7 @@ const App = () => {
           {
             title: "among lynx",
             url: "https://open.spotify.com/album/6RM23p643GZjKSN8jMhAyJ?si=16FdbZ4-SPWShKwUqmHYHA",
-            img: "https://scontent.fbma1-1.fna.fbcdn.net/v/t39.30808-6/237430963_234743611984704_6475539911570788711_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=15sUfGkGMHsAX9yaRq0&tn=L9Cl-Ad7-7ZNArIj&_nc_ht=scontent.fbma1-1.fna&oh=00_AT-JMYlV5Yrjn_UcFGpNYQioZdO23xZ6EasXMVxdUilhNg&oe=61F5C6E5",
+            img: "https://www.amonglynx.com/wp-content/uploads/2020/02/Cover_Movement_Among-Lynx_RGB_kaj.jpg",
           },
           {
             title: "sha3k",
@@ -83,7 +83,7 @@ const App = () => {
           {
             title: "erik dahl ensemble",
             url: "https://open.spotify.com/album/581rNZfwhlqTv878dubrz3?si=zVgnHMubR-GrPKFJBht2ow",
-            img: "https://scontent.fbma1-1.fna.fbcdn.net/v/t39.30808-6/225871591_315039616891869_8741164833865224190_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=gfdKYvlwp74AX_Det1o&_nc_ht=scontent.fbma1-1.fna&oh=00_AT--COVoXMgoyuuszbM9At_MhQQxrewcB-86E8_f0UBvXQ&oe=61F51D7F",
+            img: "https://svalkarecords.com/wp-content/uploads/2020/03/CD-SVALKACD005-digitalcover-1200.jpg",
           },
           {
             title: "into the wild",
