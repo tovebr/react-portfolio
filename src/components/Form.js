@@ -8,9 +8,8 @@ const Form = () => {
     reply_to: "",
   });
 
-  const errorMessageUI = () => {
-    document.querySelector(".ui-message").innerText =
-      "All fields must be filled out";
+  const messageUI = (text) => {
+    document.querySelector(".ui-message").innerText = text;
   };
 
   const onSubmit = (e) => {
@@ -24,16 +23,15 @@ const Form = () => {
       )
         .then((response) => {
           console.log("Success!", response.status, response.text);
+          messageUI(`Thanks, I'll get back to you soon!`);
+          setToSend({ ...toSend, from_name: "", message: "", reply_to: "" });
         })
         .catch((err) => {
           console.log("Failed", err);
+          messageUI("Something went wrong... Contact me on LinkedIn instead!");
         });
-      document.querySelector(
-        ".ui-message"
-      ).innerText = `Thanks, I'll get back to you soon!`;
-      setToSend({ ...toSend, from_name: "", message: "", reply_to: "" });
     } else {
-      errorMessageUI();
+      messageUI("All fields must be filled out");
     }
   };
 
