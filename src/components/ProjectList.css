@@ -101,4 +101,7 @@
   .project-list {
     grid-template-columns: 1fr;
   }
+  .project-info {
+    padding: 1rem;
+  }
 }
