@@ -87,7 +87,6 @@ const About = () => {
         </div>
       </div>
       <NavAbout className='about-nav' />
-      <Outlet />
       <ContactLinks />
     </div>
   );

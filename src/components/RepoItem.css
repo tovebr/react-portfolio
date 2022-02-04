@@ -1,10 +1,10 @@
 .repo-item {
   background: linear-gradient(
     to right,
-    rgba(51, 51, 51, 0),
-    rgba(51, 51, 51, 0.644) 5%,
-    rgba(51, 51, 51, 0.644) 95%,
-    rgba(51, 51, 51, 0) 100%
+    #5f75698c,
+    #5f7569 7%,
+    #5f7569 93%,
+    #5f75698c 100%
   );
   padding: 1rem;
   margin: 2rem 0;
