@@ -25,30 +25,28 @@ const About = () => {
             >
               KYH
             </a>{" "}
-            in Stockholm. Before that webdevelopment I worked as a freelance
-            musician for 10+ years. I have run my own company during that time.
-            Not only did it teach me to harvest and nourish my creativity, it
-            also made me a skilled administrator and problemsolver.
+            in Stockholm. Before that I have worked as a freelance musician for
+            10+ years, I have run my own company during that time. Not only did
+            it teach me to harvest and nourish my creativity, it also made me a
+            skilled administrator and problemsolver.
           </p>
           <p>
             Before being selfemployed I had a number of different jobs. I worked
             at daycares for children, at a nursinghome for the elderly, in the
-            daycare kitchen, and as a cleaner. These we're all great
-            experiences, the jobs included heavylifting, keeping up to code and
-            being there for people.
+            daycare kitchen, and as a cleaner. They we're all great experiences,
+            the jobs included heavylifting, keeping up to code and being there
+            for people.
           </p>
           <p>
             My most challenging job was as an administrator/producer at a small
             theater, Reginateatern in Uppsala. It's a small place so I was
-            involved in pretty much everything. When we where hosting the Cat
-            Video Festival i made the call to Seattle to discuss the matter. I
-            managed the employees working in the bar and the kitchen, and worked
-            there myself every now and then. I booked hotels for the preformers.
-            I was the link between the productions and out technichians. Every
-            now and then I got to leave my desk to help the technicians rebuild
-            the theater! It was a whole lot of moving parts and the biggest
-            challenge was to keep track of the status on of all guesting
-            productions at all time.
+            involved in pretty much everything. I managed the employees working
+            in the bar and the kitchen, I worked there myself every now and
+            then. I booked hotels for the preformers. I was the link between the
+            productions and our technichians. Every now and then I got to leave
+            my desk to help the technicians rebuild the theater! It was a whole
+            lot of moving parts and the biggest challenge was to keep track of
+            the status on of all guesting productions at all time.
           </p>
           <p>
             The biggest part of my professinal life has been spent as a
@@ -78,7 +76,8 @@ const About = () => {
             and synthbass in jazz, folk, hiphop, pop and bluesbands. It's a
             wonderful job but life on the road is a hard one. You have to travel
             alot to make do as a musician, more than I want to after 10+ years
-            in the business.
+            in the business. I want a steady job and a desk to come back to, day
+            after day!
           </p>
         </div>
         <div className='right'>
