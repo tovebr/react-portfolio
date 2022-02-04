@@ -18,6 +18,10 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
 
+  const closeMenu = () => {
+    if (menuOpen && width < breakPoint) setMenuOpen(false);
+  };
+
   return (
     <nav id='navbar' className='navbar'>
       <Link to='/'>
@@ -30,7 +34,9 @@ const Navbar = () => {
         className={`main-nav ${menuOpen || width > breakPoint ? "" : "hide"}`}
       >
         <li>
-          <Link to='/home'>Home</Link>
+          <Link to='/home' onClick={closeMenu}>
+            Home
+          </Link>
         </li>
         <li
           className='about-li'
@@ -38,7 +44,7 @@ const Navbar = () => {
           onMouseLeave={() => setDropdownOpen(false)}
           onClick={() => setDropdownOpen(!dropdownOpen)}
         >
-          <Link to='/about'>About</Link>
+          About
           <i
             className={`bi bi-caret-down-fill ${
               dropdownOpen ? "open-dropdown" : ""
@@ -51,20 +57,30 @@ const Navbar = () => {
           onMouseLeave={() => setDropdownOpen(false)}
         >
           <li>
-            <Link to='/about'>About Me</Link>
+            <Link to='/about' onClick={closeMenu}>
+              About Me
+            </Link>
           </li>
           <li>
-            <Link to='/code'>Code</Link>
+            <Link to='/code' onClick={closeMenu}>
+              Code
+            </Link>
           </li>
           <li>
-            <Link to='/music'>Music</Link>
+            <Link to='/music' onClick={closeMenu}>
+              Music
+            </Link>
           </li>
           <li>
-            <Link to='/photo'>Photo</Link>
+            <Link to='/photo' onClick={closeMenu}>
+              Photo
+            </Link>
           </li>
         </ul>
         <li>
-          <Link to='/contact'>Contact</Link>
+          <Link to='/contact' onClick={closeMenu}>
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>

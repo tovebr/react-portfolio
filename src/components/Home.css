@@ -141,7 +141,7 @@
     padding: 0;
   }
   #home .portrait {
-    padding: 1rem 0;
+    padding: 3rem 0;
     width: 100%;
   }
 
@@ -155,11 +155,5 @@
   }
   #home .about-link {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  .first {
-    padding-left: 0;
   }
 }
