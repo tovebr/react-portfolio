@@ -1,123 +1,123 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
-import Code from "./components/Code";
-import Music from "./components/Music";
-import Photo from "./components/Photo";
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import Navbar from './components/Navbar';
+import Code from './components/Code';
+import Music from './components/Music';
+import Photo from './components/Photo';
 
 const App = () => {
   const data = {
     myWork: {
       code: {
         about: {
-          header: "These are some of my codeing-projects!",
-          text: "I use my own artwork as much as i can to make the projects more alive. These are all written in vanilla JavaScript, some of them has a sprinkle of bootstrap but  I take great pride in writing my own css for the most part.",
+          header: 'These are some of my codeing-projects!',
+          text: 'I use my own artwork as much as i can to make the projects more alive. These are all written in vanilla JavaScript, some of them has a sprinkle of bootstrap but  I take great pride in writing my own css for the most part.',
         },
         data: [
           {
-            description: "memory game",
-            title: "memory",
+            description: 'memory game',
+            title: 'memory',
             url: {
-              demo: "https://tovebr.github.io/memory/",
-              github: "https://github.com/tovebr/memory",
+              demo: 'https://tovebr.github.io/memory/',
+              github: 'https://github.com/tovebr/memory',
             },
-            img: "images/memory.jpg",
+            img: 'images/memory.jpg',
             desktopOnly: true,
-            technology: ["JavaScript", "CSS", "HTML"],
+            technology: ['JavaScript', 'CSS', 'HTML'],
           },
           {
-            description: "made webshop, verry fun",
-            title: "webshop",
+            description: 'made webshop, verry fun',
+            title: 'webshop',
             url: {
-              demo: "https://tovebr.github.io/webshop/",
-              github: "https://github.com/tovebr/webshop",
+              demo: 'https://tovebr.github.io/webshop/',
+              github: 'https://github.com/tovebr/webshop',
             },
-            img: "images/webshop.jpg",
+            img: 'images/webshop.jpg',
             desktopOnly: false,
-            technology: ["JavaScript", "SASS", "HTML"],
+            technology: ['JavaScript', 'SASS', 'HTML'],
           },
           {
-            description: "todo app",
-            title: "todo",
+            description: 'todo app',
+            title: 'todo',
             url: {
-              demo: "https://tovebr.github.io/todo/",
-              github: "https://github.com/tovebr/todo",
+              demo: 'https://tovebr.github.io/todo/',
+              github: 'https://github.com/tovebr/todo',
             },
-            img: "images/todo.jpg",
+            img: 'images/todo.jpg',
             desktopOnly: false,
-            technology: ["JavaScript", "CSS", "HTML"],
+            technology: ['JavaScript', 'CSS', 'HTML'],
           },
           {
-            description: "using bootstrap, made quiz",
-            title: "sherlock",
+            description: 'using bootstrap, made quiz',
+            title: 'sherlock',
             url: {
-              demo: "https://tovebr.github.io/bootstrap-study/",
-              github: "https://github.com/tovebr/bootstrap-study",
+              demo: 'https://tovebr.github.io/bootstrap-study/',
+              github: 'https://github.com/tovebr/bootstrap-study',
             },
-            img: "images/sherlock.jpg",
+            img: 'images/sherlock.jpg',
             desktopOnly: false,
-            technology: ["JavaScript", "Bootstrap", "CSS", "HTML"],
+            technology: ['JavaScript', 'Bootstrap', 'CSS', 'HTML'],
           },
         ],
       },
       music: {
         about: {
-          header: "My first profession",
+          header: 'My first profession',
           text: `I've been playing music practically all my life. The bass has been my closest companion for about 20 years now. I started my company in 2005 and have been working as a musician professionally long before that. Here are some records where you can here my play, I have also composed some of the songs!`,
         },
         data: [
           {
-            title: "among lynx",
-            url: "https://open.spotify.com/album/6RM23p643GZjKSN8jMhAyJ?si=16FdbZ4-SPWShKwUqmHYHA",
-            img: "https://www.amonglynx.com/wp-content/uploads/2020/02/Cover_Movement_Among-Lynx_RGB_kaj.jpg",
+            title: 'among lynx',
+            url: 'https://open.spotify.com/album/6RM23p643GZjKSN8jMhAyJ?si=16FdbZ4-SPWShKwUqmHYHA',
+            img: 'https://www.amonglynx.com/wp-content/uploads/2020/02/Cover_Movement_Among-Lynx_RGB_kaj.jpg',
           },
           {
-            title: "sha3k",
-            url: "https://open.spotify.com/album/7FXjh2AsEJc3FNlMZUIJPf?si=xLmVaLAWSq27VptJGv6cYQ",
-            img: "https://scontent.fbma1-1.fna.fbcdn.net/v/t1.6435-9/88056964_106585920952368_4116624113382981632_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=l1P99zWNVWIAX_7GJW7&_nc_ht=scontent.fbma1-1.fna&oh=00_AT-qHxTtlUDvEcER-WOeYi7oulULaiYHxIKsxriVcTHFYg&oe=62163B68",
+            title: 'sha3k',
+            url: 'https://open.spotify.com/album/7FXjh2AsEJc3FNlMZUIJPf?si=xLmVaLAWSq27VptJGv6cYQ',
+            img: 'https://m.facebook.com/photo.php?fbid=492150586249709&id=100063643145422&set=a.492150556249712&source=11',
           },
           {
-            title: "erik dahl ensemble",
-            url: "https://open.spotify.com/album/581rNZfwhlqTv878dubrz3?si=zVgnHMubR-GrPKFJBht2ow",
-            img: "https://svalkarecords.com/wp-content/uploads/2020/03/CD-SVALKACD005-digitalcover-1200.jpg",
+            title: 'erik dahl ensemble',
+            url: 'https://open.spotify.com/album/581rNZfwhlqTv878dubrz3?si=zVgnHMubR-GrPKFJBht2ow',
+            img: 'https://svalkarecords.com/wp-content/uploads/2020/03/CD-SVALKACD005-digitalcover-1200.jpg',
           },
           {
-            title: "into the wild",
-            url: "https://open.spotify.com/album/1PyB2x9eqdeMj8xX9ZZUdi?si=2zM4P-j5QUKPcN8yBeA5XA",
-            img: "https://scontent.fbma1-1.fna.fbcdn.net/v/t31.18172-8/22137016_1973438112945864_5804792538015359339_o.jpg?_nc_cat=110&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=Beq6BzTnNw0AX_bQPss&_nc_ht=scontent.fbma1-1.fna&oh=00_AT_wUiTw9AO65MCu-ZNtBdgK4MWJsNWZIZQL5JtM1No4xA&oe=621634F3",
+            title: 'into the wild',
+            url: 'https://open.spotify.com/album/1PyB2x9eqdeMj8xX9ZZUdi?si=2zM4P-j5QUKPcN8yBeA5XA',
+            img: 'https://i1.sndcdn.com/avatars-000271008099-3njgkb-t500x500.jpg',
           },
         ],
       },
 
       photo: {
         about: {
-          header: "For the Love of Images",
-          text: "I have always painted and been intrested in colors and shapes. In the spring of 2021 i finally bought myself a camera and started learning photoshop. Here are some of my creations, check out my instagram for more!",
+          header: 'For the Love of Images',
+          text: 'I have always painted and been intrested in colors and shapes. In the spring of 2021 i finally bought myself a camera and started learning photoshop. Here are some of my creations, check out my instagram for more!',
         },
         data: [
           {
-            title: "the animal",
-            url: "https://instagram.com/p/CSmGKmatRuO/",
-            img: "images/theanimal.jpg",
+            title: 'the animal',
+            url: 'https://instagram.com/p/CSmGKmatRuO/',
+            img: 'images/theanimal.jpg',
           },
           {
-            title: "bassbaby",
-            url: "https://instagram.com/p/CSwlQ3SNjDR/",
-            img: "images/bassbaby.jpg",
+            title: 'bassbaby',
+            url: 'https://instagram.com/p/CSwlQ3SNjDR/',
+            img: 'images/bassbaby.jpg',
           },
           {
-            title: "the law",
-            url: "https://instagram.com/p/CSj-MnGtm_S/",
-            img: "images/longarm.jpg",
+            title: 'the law',
+            url: 'https://instagram.com/p/CSj-MnGtm_S/',
+            img: 'images/longarm.jpg',
           },
           {
-            title: "gorge glam",
-            url: "https://instagram.com/p/CUIB776skmM/",
-            img: "images/gorgeglam.jpg",
+            title: 'gorge glam',
+            url: 'https://instagram.com/p/CUIB776skmM/',
+            img: 'images/gorgeglam.jpg',
           },
         ],
       },
