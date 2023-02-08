@@ -41,15 +41,15 @@ const App = () => {
             technology: ['JavaScript', 'SASS', 'HTML'],
           },
           {
-            description: 'todo app',
-            title: 'todo',
+            description: 'cocktail search',
+            title: 'coctailsearch',
             url: {
-              demo: 'https://tovebr.github.io/todo/',
-              github: 'https://github.com/tovebr/todo',
+              demo: 'https://tovebr.github.io/cocktailsearch/',
+              github: 'https://github.com/tovebr/cocktailsearch',
             },
-            img: 'images/todo.jpg',
+            img: 'images/cocktails.png',
             desktopOnly: false,
-            technology: ['JavaScript', 'CSS', 'HTML'],
+            technology: ['JavaScript', 'CSS', 'Redux'],
           },
           {
             description: 'using bootstrap, made quiz',
@@ -73,12 +73,12 @@ const App = () => {
           {
             title: 'among lynx',
             url: 'https://open.spotify.com/album/6RM23p643GZjKSN8jMhAyJ?si=16FdbZ4-SPWShKwUqmHYHA',
-            img: 'https://www.amonglynx.com/wp-content/uploads/2020/02/Cover_Movement_Among-Lynx_RGB_kaj.jpg',
+            img: 'https://rockfarbror.se/wp-content/uploads/2019/09/Among-Lynx-Movement.jpg',
           },
           {
             title: 'sha3k',
             url: 'https://open.spotify.com/album/7FXjh2AsEJc3FNlMZUIJPf?si=xLmVaLAWSq27VptJGv6cYQ',
-            img: 'https://m.facebook.com/photo.php?fbid=492150586249709&id=100063643145422&set=a.492150556249712&source=11',
+            img: 'https://jazzfuel.com/wp-content/uploads/2020/04/sha3k-winning-isnt-everything-1080x972.jpg',
           },
           {
             title: 'erik dahl ensemble',
