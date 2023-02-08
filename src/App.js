@@ -47,7 +47,7 @@ const App = () => {
               demo: 'https://tovebr.github.io/cocktailsearch/',
               github: 'https://github.com/tovebr/cocktailsearch',
             },
-            img: 'images/cocktails.png',
+            img: 'images/cocktails.jpg',
             desktopOnly: false,
             technology: ['JavaScript', 'CSS', 'Redux'],
           },
