@@ -135,7 +135,6 @@ const App = () => {
         <Route path='/code' element={<Code data={data.myWork.code} />} />
         <Route path='/music' element={<Music data={data.myWork.music} />} />
         <Route path='/photo' element={<Photo data={data.myWork.photo} />} />
-        <Route path='/contact' element={<Contact />} />
       </Routes>
     </Router>
   );

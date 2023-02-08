@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { ReactComponent as Logo } from "../components/logo.svg";
-import "./Navbar.css";
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { ReactComponent as Logo } from '../components/logo.svg';
+import './Navbar.css';
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -12,10 +12,10 @@ const Navbar = () => {
   useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth);
 
-    window.addEventListener("resize", handleWindowResize);
+    window.addEventListener('resize', handleWindowResize);
 
     // Return a function from the effect that removes the event listener
-    return () => window.removeEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener('resize', handleWindowResize);
   }, []);
 
   const closeMenu = () => {
@@ -31,7 +31,7 @@ const Navbar = () => {
         <i className='bi bi-list'></i>
       </div>
       <ul
-        className={`main-nav ${menuOpen || width > breakPoint ? "" : "hide"}`}
+        className={`main-nav ${menuOpen || width > breakPoint ? '' : 'hide'}`}
       >
         <li>
           <Link to='/home' onClick={closeMenu}>
@@ -47,12 +47,12 @@ const Navbar = () => {
           About
           <i
             className={`bi bi-caret-down-fill ${
-              dropdownOpen ? "open-dropdown" : ""
+              dropdownOpen ? 'open-dropdown' : ''
             }`}
           ></i>
         </li>
         <ul
-          className={`about-nav ${!dropdownOpen ? "hide-dropdown" : ""}`}
+          className={`about-nav ${!dropdownOpen ? 'hide-dropdown' : ''}`}
           onMouseOver={() => setDropdownOpen(true)}
           onMouseLeave={() => setDropdownOpen(false)}
         >
@@ -77,11 +77,6 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <li>
-          <Link to='/contact' onClick={closeMenu}>
-            Contact
-          </Link>
-        </li>
       </ul>
     </nav>
   );
