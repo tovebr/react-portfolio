@@ -1,15 +1,15 @@
-import React from "react";
-import "./ProjectCard.css";
+import React from 'react';
+import './ProjectCard.css';
 
 const ProjectCard = ({ project, formatTitle }) => {
   const link = () => {
-    if (typeof project.url !== "string") {
+    if (typeof project.url !== 'string') {
       return (
         <div className='links'>
-          <a href={project.url.demo} target={"_blank"} rel='noreferrer'>
+          <a href={project.url.demo} target={'_blank'} rel='noreferrer'>
             Demo
           </a>
-          <a href={project.url.github} target={"_blank"} rel='noreferrer'>
+          <a href={project.url.github} target={'_blank'} rel='noreferrer'>
             Github
           </a>
         </div>
@@ -17,7 +17,7 @@ const ProjectCard = ({ project, formatTitle }) => {
     } else {
       return (
         <div className='link'>
-          <a href={project.url} target={"_blank"} rel='noreferrer'>
+          <a href={project.url} target={'_blank'} rel='noreferrer'>
             More
           </a>
         </div>
@@ -35,6 +35,7 @@ const ProjectCard = ({ project, formatTitle }) => {
     );
   };
   link();
+  console.log(project.img);
 
   return (
     <div className='card'>
@@ -43,8 +44,8 @@ const ProjectCard = ({ project, formatTitle }) => {
         <img src={project.img} alt={project.title}></img>
       </div>
       {link()}
-      {project.technology ? tech() : ""}
-      {project.desktopOnly ? <p className='responsive'>!Desktop only!</p> : ""}
+      {project.technology ? tech() : ''}
+      {project.desktopOnly ? <p className='responsive'>!Desktop only!</p> : ''}
     </div>
   );
 };
