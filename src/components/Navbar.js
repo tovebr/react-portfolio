@@ -24,60 +24,62 @@ const Navbar = () => {
 
   return (
     <nav id='navbar' className='navbar'>
-      <Link to='/'>
-        <Logo className='logo' />
-      </Link>
-      <div className='hamburger' onClick={() => setMenuOpen(!menuOpen)}>
-        <i className='bi bi-list'></i>
-      </div>
-      <ul
-        className={`main-nav ${menuOpen || width > breakPoint ? '' : 'hide'}`}
-      >
-        <li>
-          <Link to='/home' onClick={closeMenu}>
-            Home
-          </Link>
-        </li>
-        <li
-          className='about-li'
-          onMouseOver={() => setDropdownOpen(true)}
-          onMouseLeave={() => setDropdownOpen(false)}
-          onClick={() => setDropdownOpen(!dropdownOpen)}
-        >
-          About
-          <i
-            className={`bi bi-caret-down-fill ${
-              dropdownOpen ? 'open-dropdown' : ''
-            }`}
-          ></i>
-        </li>
+      <div className='navbar-items'>
+        <Link to='/'>
+          <Logo className='logo' />
+        </Link>
+        <div className='hamburger' onClick={() => setMenuOpen(!menuOpen)}>
+          <i className='bi bi-list'></i>
+        </div>
         <ul
-          className={`about-nav ${!dropdownOpen ? 'hide-dropdown' : ''}`}
-          onMouseOver={() => setDropdownOpen(true)}
-          onMouseLeave={() => setDropdownOpen(false)}
+          className={`main-nav ${menuOpen || width > breakPoint ? '' : 'hide'}`}
         >
           <li>
-            <Link to='/about' onClick={closeMenu}>
-              About Me
+            <Link to='/home' onClick={closeMenu}>
+              Home
             </Link>
           </li>
-          <li>
-            <Link to='/code' onClick={closeMenu}>
-              Code
-            </Link>
+          <li
+            className='about-li'
+            onMouseOver={() => setDropdownOpen(true)}
+            onMouseLeave={() => setDropdownOpen(false)}
+            onClick={() => setDropdownOpen(!dropdownOpen)}
+          >
+            About
+            <i
+              className={`bi bi-caret-down-fill ${
+                dropdownOpen ? 'open-dropdown' : ''
+              }`}
+            ></i>
           </li>
-          <li>
-            <Link to='/music' onClick={closeMenu}>
-              Music
-            </Link>
-          </li>
-          <li>
-            <Link to='/photo' onClick={closeMenu}>
-              Photo
-            </Link>
-          </li>
+          <ul
+            className={`about-nav ${!dropdownOpen ? 'hide-dropdown' : ''}`}
+            onMouseOver={() => setDropdownOpen(true)}
+            onMouseLeave={() => setDropdownOpen(false)}
+          >
+            <li>
+              <Link to='/about' onClick={closeMenu}>
+                About Me
+              </Link>
+            </li>
+            <li>
+              <Link to='/code' onClick={closeMenu}>
+                Code
+              </Link>
+            </li>
+            <li>
+              <Link to='/music' onClick={closeMenu}>
+                Music
+              </Link>
+            </li>
+            <li>
+              <Link to='/photo' onClick={closeMenu}>
+                Photo
+              </Link>
+            </li>
+          </ul>
         </ul>
-      </ul>
+      </div>
     </nav>
   );
 };

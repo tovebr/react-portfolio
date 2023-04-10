@@ -1,19 +1,19 @@
-import React from "react";
-import ProjectList from "./ProjectList";
-import "./Container.css";
-import ContactLinks from "./ContactLinks";
-import RepoList from "./RepoList";
+import React from 'react';
+import ProjectList from './ProjectList';
+import './Container.css';
+import ContactLinks from './ContactLinks';
+import RepoList from './RepoList';
 
 const Container = ({ id, data, repos }) => {
   const formatTitle = (title) => {
-    if (title.includes(" ")) {
+    if (title.includes(' ')) {
       let titleCased = [];
       title
-        .split(" ")
+        .split(' ')
         .forEach((word) =>
           titleCased.push(word.slice(0, 1).toUpperCase() + word.slice(1))
         );
-      return titleCased.join(" ");
+      return titleCased.join(' ');
     }
     return title.slice(0, 1).toUpperCase() + title.slice(1);
   };
@@ -28,15 +28,6 @@ const Container = ({ id, data, repos }) => {
         data={data}
         formatTitle={formatTitle}
       />
-      {repos ? (
-        <RepoList
-          className='repo-list'
-          repos={repos}
-          formatTitle={formatTitle}
-        />
-      ) : (
-        ""
-      )}
       <ContactLinks />
     </div>
   );

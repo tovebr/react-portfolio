@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto&family=Staatliches&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto&family=Staatliches&display=swap');
 
 * {
   padding: 0;
@@ -15,9 +15,10 @@
 }
 
 body {
-  font-family: "Merriweather Sans", sans-serif;
-  background-color: var(--lightgreen);
+  font-family: 'Merriweather Sans', sans-serif;
+  background: var(--gradient-background);
   color: #fff;
+  overflow-x: hidden;
 }
 
 a {
@@ -31,7 +32,6 @@ ul {
 .container {
   width: 80%;
   min-height: 45rem;
-  background: var(--gradient-background);
   margin: 4.5rem auto;
   padding: 2rem;
 }
@@ -79,5 +79,8 @@ ul {
 @media screen and (max-width: 700px) {
   .container {
     margin: 0;
+  }
+  .logo {
+    width: 3.5rem;
   }
 }

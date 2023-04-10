@@ -1,10 +1,14 @@
 .navbar {
   background: linear-gradient(to right, var(--darkergreen), var(--midgreen));
+}
+.navbar-items {
+  max-width: 1400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 2;
+  margin: auto;
 }
 .logo {
   height: 3rem;
@@ -30,9 +34,9 @@ li {
 .about-li {
   position: relative;
 }
+
 .bi-list {
   font-size: 3rem;
-
   display: none;
 }
 
@@ -41,8 +45,7 @@ li {
   flex-direction: column;
   position: absolute;
   top: 4rem;
-  left: 6.5rem;
-
+  left: 6rem;
   text-align: center;
   transition: all 0.3s ease-in-out;
   background-color: var(--midgreen);
@@ -84,15 +87,12 @@ li {
 }
 
 @media screen and (max-width: 900px) {
-  #navbar {
-    /* width: 100%; */
+  .navbar-items {
     flex-wrap: wrap;
-    padding-top: 0.3rem;
   }
 
   .hamburger {
     width: 3rem;
-
     margin-right: 0.3rem;
   }
   .bi-list {
