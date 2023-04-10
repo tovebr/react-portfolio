@@ -2,7 +2,6 @@ import React from 'react';
 import ProjectList from './ProjectList';
 import './Container.css';
 import ContactLinks from './ContactLinks';
-import RepoList from './RepoList';
 
 const Container = ({ id, data, repos }) => {
   const formatTitle = (title) => {
