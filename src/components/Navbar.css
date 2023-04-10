@@ -2,7 +2,7 @@
   background: linear-gradient(to right, var(--darkergreen), var(--midgreen));
 }
 .navbar-items {
-  max-width: 1400px;
+  max-width: 1300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
