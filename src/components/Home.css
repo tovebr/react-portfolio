@@ -13,7 +13,7 @@
   position: absolute;
   top: 2rem;
   left: 0;
-  animation: homepagefirstgroup 2s forwards;
+  /* animation: homepagefirstgroup 2s forwards; */
 }
 .second {
   width: 55%;
@@ -21,7 +21,8 @@
   margin-right: 0;
   display: flex;
   justify-content: flex-end;
-  animation: homepagesecondgroup 2s forwards;
+  opacity: 0;
+  animation: homepagesecondgroup 2s forwards 3s;
 }
 .third {
   width: 45%;
@@ -29,7 +30,8 @@
   bottom: 2rem;
   left: 0;
   margin-top: 1rem;
-  animation: homepagethirdgroup 2s forwards;
+  opacity: 0;
+  animation: homepagethirdgroup 2s forwards 3s;
 }
 
 .portrait {
@@ -39,6 +41,11 @@
 
 #logo-and-name {
   width: 110%;
+  animation: placementbigscreen 4s forwards;
+}
+
+.firstletter {
+  animation: size 4s forwards;
 }
 
 #home .nav-about {
@@ -69,6 +76,23 @@
   text-align: start;
 }
 
+.initials {
+  position: absolute;
+  fill: none;
+  stroke: #fafafa;
+  stroke-width: 0.5px;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  opacity: 0;
+  animation: logobigscreen 4s forwards;
+}
+
+.firstname,
+.lastname {
+  opacity: 0;
+  animation: fullnameanimation 2s forwards 3s;
+}
+
 @media screen and (max-width: 1200px) {
   .home-content {
     display: flex;
@@ -77,7 +101,7 @@
   }
 
   #logo-and-name {
-    width: 110%;
+    width: 100%;
   }
 
   .first {
@@ -86,6 +110,10 @@
   .second {
     margin: 0;
     margin-top: 50%;
+  }
+
+  .portrait {
+    padding-top: 0;
   }
 
   .third {
@@ -115,11 +143,34 @@
     padding: 3rem 0 0 0;
     text-align: center;
   }
+  .firstletter,
+  .firstname,
+  .lastname {
+    transform: scale(1.05);
+  }
+
+  #logo-and-name {
+    animation: placementmidscreen 3s forwards;
+  }
 }
 
 @media screen and (max-width: 820px) {
+  .initials {
+    animation: logosmallscreen 4s forwards;
+  }
   .first {
     padding-left: 0;
+  }
+
+  .second {
+    margin-top: 60%;
+  }
+
+  #logo-and-name {
+    animation: placement 3s forwards 1.5s;
+  }
+  .firstletter {
+    animation: none;
   }
 }
 @media screen and (max-width: 700px) {
@@ -147,10 +198,6 @@
     margin-top: 0;
   }
 
-  #logo-and-name {
-    margin-left: 1.5rem;
-  }
-
   #home .portrait {
     padding: 3rem 0 1rem 0;
     width: 100%;
@@ -173,12 +220,123 @@
   }
 }
 
+@keyframes placementmidscreen {
+  0% {
+    transform: translate(12%, -10%);
+  }
+  65% {
+    transform: translate(12%, -10%);
+  }
+  100% {
+    transform: translate(12%, -10%);
+  }
+}
+@keyframes sizemidscreen {
+  0% {
+    transform: scale(1.5);
+  }
+  65% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes size {
+  0% {
+    transform: scale(1.4);
+  }
+  65% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes placementbigscreen {
+  0% {
+    transform: translate(60%, -10%);
+  }
+  65% {
+    transform: translate(60%, -10%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes placement {
+  0% {
+    margin-left: 0;
+  }
+  75% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 1.4rem;
+  }
+}
+
+@keyframes logobigscreen {
+  0% {
+    stroke-dashoffset: 400;
+    opacity: 0;
+    transform: scale(2) translateY(-4%) translateX(0);
+  }
+
+  20% {
+    fill: rgb(255, 255, 255, 0);
+  }
+  75% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+    transform: scale(2) translateY(-4%) translateX(0);
+  }
+  100% {
+    fill: #fff;
+    stroke-dashoffset: 0;
+    opacity: 1;
+    transform: scale(1) translateY(0) translateX(0);
+  }
+}
+
+@keyframes logosmallscreen {
+  0% {
+    stroke-dashoffset: 400;
+    opacity: 0;
+    transform: scale(3.5) translateY(-4%) translateX(-1%);
+  }
+
+  50% {
+    fill: rgb(255, 255, 255, 0);
+  }
+  75% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+    transform: scale(3.5) translateY(-4%) translateX(-1%);
+  }
+  100% {
+    fill: #fff;
+    stroke-dashoffset: 0;
+    opacity: 1;
+    transform: scale(1) translateY(0) translateX(0);
+  }
+}
+
+@keyframes fullnameanimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes homepagefirstgroup {
   from {
-    left: -300px;
+    left: -50px;
     opacity: 0;
-    filter: blur(20px);
-    transform: scale(2.5);
   }
   to {
     left: 0;
